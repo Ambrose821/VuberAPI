@@ -20,7 +20,10 @@ public class Story {
 
     private String caption;
 
+    @Column(name = "date", columnDefinition = "TIMESTAMP")
     private LocalDateTime date;
+
+
 
     @JsonBackReference
     @ManyToOne(cascade = CascadeType.ALL)
